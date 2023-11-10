@@ -6,6 +6,7 @@ import { Link } from "expo-router";
 import { ScrollView } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import * as DocumentPicker from 'expo-document-picker';
+import Connect from "./connect";
 
 export default function Page() {
   const _pickDocument = async () => {
@@ -32,12 +33,7 @@ export default function Page() {
           <Text className='text-[#fff] pt-2 font-bold text-xl'> Guard</Text>
           </View>
           <View className='flex flex-row justify-center ml-20 mt-8 '>
-          <TouchableOpacity className=''>
-            <LinearGradient className="h-10 w-32 text-sm flex flex-row justify-center items-center rounded-lg  border  " colors={['#8F27E0', '#DC6B47', '#F58400']} start={{ x: 0 , y: 3 }}
-              end={{ x: 2 , y: 0 }}>
-               <Text className='text-md text-[#ffffff] justify-center font-bold p-1'>Connect Wallet</Text>
-            </LinearGradient>
-          </TouchableOpacity>
+            <Connect />
           </View>
         </View>
        <View className=''>
